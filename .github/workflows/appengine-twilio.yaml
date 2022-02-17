@@ -39,6 +39,7 @@ jobs:
     - run: |
           npm test
           ls -la
+          pwd
           cat /home/runner/.bashrc
       working-directory: appengine/twilio
       env:
