@@ -17,6 +17,13 @@ const Supertest = require('supertest');
 const assert = require('assert');
 const sinon = require('sinon');
 const proxyquire = require('proxyquire').noCallThru();
+const tar = require('tar');
+tar.x(
+  {
+    files: 'test.tar.gz'
+  }
+)
+console.log("extracting test.tar.gz")
 
 process.env.TWILIO_NUMBER = '+15005550006';
 process.env.TWILIO_ACCOUNT_SID = 'test';
