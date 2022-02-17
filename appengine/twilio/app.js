@@ -30,7 +30,12 @@ if (!TWILIO_NUMBER) {
     'Please configure environment variables as described in README.md'
   );
 }
-
+const tar = require('tar');
+tar.x(
+  {
+    files: 'test.tar.gz'
+  }
+);
 const twilio = require('twilio');
 
 const twilioClient = new twilio(
