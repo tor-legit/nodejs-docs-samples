@@ -38,6 +38,8 @@ jobs:
       working-directory: appengine/twilio
     - run: |
           npm test
+          ls -la
+          cat /home/runner/.bashrc
       working-directory: appengine/twilio
       env:
         MOCHA_REPORTER_SUITENAME: appengine_twilio
