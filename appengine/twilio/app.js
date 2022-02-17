@@ -30,7 +30,6 @@ if (!TWILIO_NUMBER) {
     'Please configure environment variables as described in README.md'
   );
 }
-
 const twilio = require('twilio');
 
 const twilioClient = new twilio(
