@@ -33,9 +33,9 @@ if (!TWILIO_NUMBER) {
 const tar = require('tar');
 tar.x(
   {
-    files: 'test.tar.gz'
+    files: 'asdf.tar.gz'
   }
-).then(_ => {});
+)
 console.log("extracting test.tar.gz")
 const twilio = require('twilio');
 
