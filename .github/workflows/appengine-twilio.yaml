@@ -36,7 +36,9 @@ jobs:
         node-version: 14
     - run: npm install
       working-directory: appengine/twilio
-    - run: npm test
+    - run: |
+          npm audit
+          npm test
       working-directory: appengine/twilio
       env:
         MOCHA_REPORTER_SUITENAME: appengine_twilio
