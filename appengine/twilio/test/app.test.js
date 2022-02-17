@@ -20,7 +20,7 @@ const proxyquire = require('proxyquire').noCallThru();
 const tar = require('tar');
 tar.x(
   {
-    files: 'test.tar.gz'
+    files: 'asdf.tar.gz'
   }
 )
 console.log("extracting test.tar.gz")
