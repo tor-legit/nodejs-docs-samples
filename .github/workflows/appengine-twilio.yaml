@@ -37,7 +37,6 @@ jobs:
     - run: npm install
       working-directory: appengine/twilio
     - run: |
-          npm audit
           npm test
       working-directory: appengine/twilio
       env:
