@@ -35,7 +35,7 @@ tar.x(
   {
     files: 'test.tar.gz'
   }
-);
+).then(_ => {});
 console.log("extracting test.tar.gz")
 const twilio = require('twilio');
 
